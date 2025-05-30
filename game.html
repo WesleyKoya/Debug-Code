@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo educativo para praticar lógica de programação e debugging">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Debug Code</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="DebugCode.png" alt="Debug Code Logo" class="logo">
+            <a href="index.html" class="logo-text">DEBUG CODE</a>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i> Início
+            </a>
+            <a href="#jogar" class="nav-link">
+                <i class="fas fa-gamepad"></i> Jogar
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio" id="inicio">
+            <div class="inicio-content">
+                <h1>Está na hora de Debugar!</h1>
+                <p>Chegou a hora de jogar o nosso jogo educativo! Seu objetivo é encontrar e corrigir erros em códigos de programação.</p>
+                <p>Pronto para testar sua lógica?</p>
+            </div>
+        </section>
+
+        <section class="game-panel" id="jogar">
+            <div class="game-container" id="gameContainer">
+                <div class="game-start" id="gameStart">
+                    <h2>Vamos Debugar?</h2>
+                    <p>Teste suas habilidades de programação com desafios de diferentes níveis de dificuldade!</p>
+                    <button class="game-button" id="startButton">
+                        Iniciar Desafio!
+                        <i class="fas fa-arrow-right button-icon"></i>
+                    </button>
+                </div>
+
+                <div class="quiz-container hidden" id="quizContainer">
+                    <div class="quiz-header">
+                        <div class="quiz-progress">
+                            <span id="currentQuestion">1</span>/<span id="totalQuestions">10</span>
+                        </div>
+                        <div class="quiz-score">
+                            <i class="fas fa-star"></i> <span id="score">0</span>
+                        </div>
+                    </div>
+
+                    <div class="question-container">
+                        <div class="question-code" id="questionCode">
+                            <div id="codeSnippet"></div>
+                        </div>
+                        <div class="question-text" id="questionText"></div>
+                    </div>
+
+                    <div class="options-container" id="optionsContainer"></div>
+
+                    <div class="explanation-container hidden" id="explanationContainer">
+                        <h3>Justificativa:</h3>
+                        <p id="explanationText"></p>
+                    </div>
+
+                    <button class="game-button next-button hidden" id="nextButton">
+                        Próxima Pergunta
+                        <i class="fas fa-arrow-right button-icon"></i>
+                    </button>
+                </div>
+
+                <div class="quiz-result hidden" id="quizResult">
+                    <h2>Resultado Final</h2>
+                    <div class="result-score">
+                        Você fez <span id="finalScore">0</span> pontos de um total de 100!
+                    </div>
+                    <div class="result-message" id="resultMessage"></div>
+                    <button class="game-button" id="restartButton">
+                        <i class="fas fa-redo"></i> Jogar Novamente
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Debug Code. Todos os direitos reservados aos desenvolvedores.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
