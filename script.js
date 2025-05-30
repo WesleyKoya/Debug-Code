@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 1,
                 title: "Elemento Faltante",
                 question: "No trecho de código HTML acima, qual tag está faltando para fechar corretamente o div com a classe logo-container?",
-                image: "pergunta1.png",
+                image: "perguntas/pergunta1.PNG",
                 options: [
                     { text: "&lt;/div&gt;", correct: true },
                     { text: "&lt;/header&gt;", correct: false },
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 2,
                 title: "Propriedade CSS Incorreta",
                 question: "No trecho de CSS acima, qual propriedade está incorreta para definir a cor do texto do link de navegação?",
-                image: "perguntas/pergunta2.png",
+                image: "perguntas/pergunta2.PNG",
                 options: [
                     { text: "text-decoration", correct: false },
                     { text: "font-weight", correct: false },
