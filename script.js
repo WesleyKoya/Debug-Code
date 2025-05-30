@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 1,
                 title: "Elemento Faltante",
                 question: "No trecho de código HTML acima, qual tag está faltando para fechar corretamente o div com a classe logo-container?",
-                image: "perguntas/pergunta1.png",
+                image: "pergunta1.png",
                 options: [
                     { text: "&lt;/div&gt;", correct: true },
                     { text: "&lt;/header&gt;", correct: false },
