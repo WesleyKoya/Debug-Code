@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 2,
                 title: "Propriedade CSS Incorreta",
                 question: "No trecho de CSS acima, qual propriedade está incorreta para definir a cor do texto do link de navegação?",
-                image: "perguntas/pergunta2.PNG",
+                image: "perguntas/pergunta2.png",
                 options: [
                     { text: "text-decoration", correct: false },
                     { text: "font-weight", correct: false },
